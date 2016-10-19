@@ -1,0 +1,11 @@
+import com.app.Address
+
+model {
+	Address address
+}
+
+json {
+	streetAddress address?.streetAddress
+	city address?.city
+	state address?.state
+}

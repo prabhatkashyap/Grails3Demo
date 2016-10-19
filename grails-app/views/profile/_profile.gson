@@ -1,0 +1,12 @@
+import com.app.Profile
+
+model {
+	Profile profile
+}
+
+json {
+	fullName profile.fullName
+	mobileNo profile.mobileNo
+
+	addresses tmpl.address(profile.addresses?:[])
+}

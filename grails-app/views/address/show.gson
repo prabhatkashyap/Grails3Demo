@@ -1,0 +1,7 @@
+import com.app.Address
+
+model {
+	Address address
+}
+
+json tmpl.address(address)
